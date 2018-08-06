@@ -1,4 +1,3 @@
-// threejs.org/license
 'use strict';
 var THREE = {
     REVISION: "78"
