@@ -53,6 +53,10 @@ $(function(){
 	$('#singleDate').daterangepicker({
 		singleDatePicker: true,
 		timePicker:true,
+		timePickerSeconds:true,
+		timePicker24Hour:true,
+		autoApply:true,
+		showDropdowns:true,
 		startDate: moment(),
 		"locale": {
 			format: 'YYYY-MM-DD HH:mm:ss',
@@ -64,6 +68,81 @@ $(function(){
 		}
 	});
 
+	
+	/**
+	startDate：设置默认的开始日期 
+
+　　格式：MM/DD/YYYY
+
+　　示例："startDate":"10/14/2017"
+
+endDate：设置默认的结束日期
+
+　　格式：MM/DD/YYYY
+
+　　示例："endDate":"10/22/2017"
+
+minDate：设置最小可用日期
+
+　　格式：MM/DD/YYYY
+
+　　示例："minDate":"10/14/1995"
+
+maxDate：设置最大可用日期
+
+　　格式：MM/DD/YYYY
+
+　　示例："maxDate":"10/14/2017"
+
+autoApply：不用点击Apply或者应用按钮就可以直接取得选中的日期
+
+　　可选值：true（自动选中） false（点击Apply后选中日期）
+
+　　默认值：false
+
+singleDatePicker：设置为单个的datepicker，而不是有区间的datepicker
+
+　　可选值：true（单个的datepicker） false（有区间的datepicker）
+
+　　默认值：false
+
+showDropdowns：当设置值为true的时候，允许年份和月份通过下拉框的形式选择
+
+　　可选值：true false
+
+　　默认值：false（无下拉框）
+
+timePicker：可选中时分
+
+　　可选值：true false
+
+　　默认值：false
+
+　　为了获取对应格式的时间需要的代码：
+
+"locale": {
+      format: 'YYYY-MM-DD hh:mm:ss',
+      }
+timePicker24Hour：设置小时为24小时制
+
+timePickerSeconds：可选中秒
+
+opens：设置datepicker面板防止的位置：左边、右边或者中间
+
+　　可选值：right left center
+
+　　默认值：center
+
+　　示例："opens":"left"
+
+drops：设置面板防止的位置：input输入框上面或者input输入框下面
+
+　　可选值：down up
+
+　　默认值：down
+
+　　示例："drops":"down"
+	*/
 })
 
 </script>
