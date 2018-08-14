@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>daterangepicker 例子</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" media="all" href="daterangepicker.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="moment.min.js"></script>
+    <script type="text/javascript" src="daterangepicker.js"></script>
+</head>
+
+<body>
+<input type="text" name="mydate" id="mydate" style="width: 500px;"/>
+<br>
+<br>
+<br>
+<br>
+<input type="text" name="singleDate" id="singleDate" style="width: 500px;"/>
+
+
+<script type="text/javascript">
+$(function(){
+	var options={};
+	options.locale = {
+      direction: 'ltr',
+      format: 'YYYY-MM-DD HH:mm:ss',
+      separator: ' - ',
+      applyLabel: 'Apply',
+      cancelLabel: 'Cancel',
+      fromLabel: 'From',
+      toLabel: 'To',
+      customRangeLabel: 'Custom',
+      daysOfWeek: ['日', '一', '二', '三', '四', '五','六'],
+      monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      firstDay: 1
+    };
+	options.timePicker = true;
+	
+	options.ranges = {
+      'Today': [moment(), moment()],
+      'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+      'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+      'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+      'This Month': [moment().startOf('month'), moment().endOf('month')],
+      'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+    };
+
+	$("#mydate").daterangepicker(options, function(start, end, label) { 
+		console.log('New date range selected: ' + start.format('YYYY-MM-DD HH:mm:ss') + ' to ' + end.format('YYYY-MM-DD HH:mm:ss') + ' (predefined range: ' + label + ')'); 
+	}).click();  
+
+
+	$('#singleDate').daterangepicker({
+		singleDatePicker: true,
+		timePicker:true,
+		startDate: moment(),
+		"locale": {
+			format: 'YYYY-MM-DD HH:mm:ss',
+			applyLabel: "应用",
+			cancelLabel: "取消",
+			resetLabel: "重置",
+			daysOfWeek: ['日', '一', '二', '三', '四', '五','六'],
+			monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+		}
+	});
+
+})
+
+</script>
+</body>
+</html>
