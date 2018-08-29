@@ -1,0 +1,7 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "dependencies": {
+    "easy-router": "^2.0.10"
+  }
+}

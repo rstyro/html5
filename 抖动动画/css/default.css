@@ -1,0 +1,352 @@
+/* ===================================================================
+CSS information
+ file name  :  default.css
+ style info :  リセット及びbody初期設定 (このスタイルシートは基本的に変更しない)
+=================================================================== */
+/* change min-width to suit your needs */
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 13px;
+	color: #333;
+	vertical-align: baseline;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height: 1.6;
+	letter-spacing: 0.1em;
+}
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, textarea{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight:normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section,textarea {
+	display: block;
+}
+nav ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	color: #333;
+	cursor:pointer;
+	outline:none;
+}
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: normal;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout:fixed;
+}
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+input[type="submit"]{
+	cursor:pointer;
+	border:none;
+	}
+textarea{
+	resize:vertical;
+	overflow:hidden;
+	}
+input, select {
+	vertical-align: middle;
+	border-radius
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+	-webkit-appearance: none;
+	border:none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+}
+li {
+	list-style:none;
+}
+address{
+	font-style:normal;
+}
+
+/* utility */
+.m05 {
+	margin-bottom: 5px;
+}
+.m10 {
+	margin-bottom: 10px;
+}
+.m12 {
+	margin-bottom: 12px;
+}
+.m15 {
+	margin-bottom: 15px;
+}
+.m20 {
+	margin-bottom: 20px;
+}
+.m30 {
+	margin-bottom: 30px;
+}
+.m40 {
+	margin-bottom: 40px;
+}
+.m50 {
+	margin-bottom: 50px;
+}
+.m60 {
+	margin-bottom: 60px;
+}
+.mt05 {
+	margin-top: 5px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mt12 {
+	margin-top: 12px;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mt30 {
+	margin-top: 30px;
+}
+.mt35 {
+	margin-top: 35px;
+}
+.mt40 {
+	margin-top: 40px;
+}
+.mt50 {
+	margin-top: 50px;
+}
+.mt60 {
+	margin-top: 60px;
+}
+.ml05 {
+	margin-left: 5px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml12 {
+	margin-left: 12px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml20 {
+	margin-left: 20px;
+}
+.ml30 {
+	margin-left: 30px;
+}
+.ml40 {
+	margin-left: 40px;
+}
+.ml50 {
+	margin-left: 50px;
+}
+.ml60 {
+	margin-left: 60px;
+}
+.mr05 {
+	margin-right: 5px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mr15 {
+	margin-right: 15px;
+}
+.mr20 {
+	margin-right: 20px;
+}
+.mr30 {
+	margin-right: 30px;
+}
+.mr40 {
+	margin-right: 40px;
+}
+.mr50 {
+	margin-right: 50px;
+}
+.mr60 {
+	margin-right: 60px;
+}
+.pt05 {
+	padding-top: 5px;
+}
+.pt10 {
+	padding-top: 10px;
+}
+.pt15 {
+	padding-top: 15px;
+}
+.pt20 {
+	padding-top: 20px;
+}
+.pt30 {
+	padding-top: 30px;
+}
+.pt40 {
+	padding-top: 40px;
+}
+.pb05 {
+	padding-bottom: 5px;
+}
+.pb10 {
+	padding-bottom: 10px;
+}
+.pb15 {
+	padding-bottom: 15px;
+}
+.pb20 {
+	padding-bottom: 20px;
+}
+.pb30 {
+	padding-bottom: 30px;
+}
+.pb40 {
+	padding-bottom: 40px;
+}
+.pl05 {
+	padding-left: 5px;
+}
+.pl10 {
+	padding-left: 10px;
+}
+.pl15 {
+	padding-left: 15px;
+}
+.pl20 {
+	padding-left: 20px;
+}
+.pl30 {
+	padding-left: 30px;
+}
+.pl40 {
+	padding-left: 40px;
+}
+.pr05 {
+	padding-right: 5px;
+}
+.pr10 {
+	padding-right: 10px;
+}
+.pr15 {
+	padding-right: 15px;
+}
+.pr20 {
+	padding-right: 20px;
+}
+.pr30 {
+	padding-right: 30px;
+}
+.pr40 {
+	padding-right: 40px;
+}
+.flt {
+	float: left;
+}
+.flr {
+	float: right;
+}
+.txt_l, td.txt_l, .txt_l td {
+	text-align: left;
+}
+.txt_r, td.txt_r, .txt_r td {
+	text-align: right;
+}
+.txt_c, td.txt_c, .txt_c td {
+	text-align: center;
+}
+.valign_t, td.valign_t, .valign_t td {
+	vertical-align: top;
+}
+.valign_m, td.valign_m, .valign_m td {
+	vertical-align: middle;
+}
+.valign_b, td.valign_b, .valign_b td {
+	vertical-align: bottom;
+}
+
+.clear {
+	clear: both;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: block;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+.ie6_error, .noScript {
+	background:#F66;
+	padding: 30px;
+	text-align:center;
+	font-size:150%;
+	color:#333;
+}
+.last-child {
+	margin:0 !important;
+}

@@ -1,0 +1,54 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+.turnplate_box{
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+	position: relative; 
+}
+.turnplate_box canvas{
+	position: absolute;
+}
+#myCanvas{
+	background-color: white;
+	border-radius: 100%;
+}
+#myCanvas01,#myCanvas03{
+	left: 50px;
+	top: 50px;
+	z-index: 30;
+}
+#myCanvas02{
+	left: 75px;
+	top: 75px;
+	z-index: 20;
+}
+#myCanvas{
+    -o-transform:  transform 6s;
+	-ms-transform:  transform 6s;
+	-moz-transform:  transform 6s;		
+	-webkit-transform:  transform 6s;
+	transition: transform 6s;
+	-o-transform-origin:  50% 50%;
+	-ms-transform-origin:  50% 50%;
+	-moz-transform-origin:  50% 50%;		
+	-webkit-transform-origin:  50% 50%;
+	transform-origin: 50% 50%;
+}
+.turnplatw_btn{
+	width: 60px;
+	height: 60px;
+	left: 120px;
+	top: 120px;
+	border-radius: 100%;
+	position: absolute;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	outline: none;
+	z-index: 40;
+}

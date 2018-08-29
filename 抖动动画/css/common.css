@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+ file name  :  common.css
+ style info :  基本共通cssの定義
+=================================================================== */
+/*--general style--*/
+/* line 12, ../sass/common.scss */
+body {
+  background: #ececec;
+}
+
+/* line 16, ../sass/common.scss */
+#wrapper {
+  overflow: hidden;
+  min-width: 960px;
+  text-align: center;
+}
+
+/* line 21, ../sass/common.scss */
+#header, #footer, #main {
+  min-width: 960px;
+}
+
+/* line 24, ../sass/common.scss */
+a {
+  color: #009139;
+  text-decoration: underline;
+}
+/* line 27, ../sass/common.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 32, ../sass/common.scss */
+section {
+  padding: 100px 0;
+}
+/* line 34, ../sass/common.scss */
+section p.shake {
+  font-size: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 41, ../sass/common.scss */
+.pattern1 {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #fff;
+}
